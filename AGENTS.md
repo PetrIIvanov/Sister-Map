@@ -30,3 +30,6 @@ SisterMap/
 - Комментарии в коде не добавлять
 - Все тексты на русском (кроме кода)
 - Перед коммитом проверять git status
+
+## Changelog
+- 2026-07-04 — создана база знаний (AGENTS.md, README.md, docs/*, requirements.txt, .gitignore), инициализирован репозиторий, push на GitHub
