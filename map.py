@@ -9,15 +9,6 @@ from folium import GeoJsonTooltip, GeoJsonPopup
 
 
 # === БЛОК 2: Константы ===
-COLOR_MAP = {
-    "slavic": "red",
-    "germanic": "blue",
-    "romance": "green",
-    "uralic": "purple",
-    "baltic": "orange",
-    "other": "gray",
-}
-
 DATA_PATH = "data.json"
 OUTPUT_PATH = "sister_map.html"
 GEOJSON_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"
@@ -35,6 +26,20 @@ ISO_A2_TO_A3 = {
     "FI": "FIN", "EE": "EST", "HU": "HUN", "LV": "LVA",
     "LT": "LTU", "GR": "GRC", "AL": "ALB", "IE": "IRL",
     "TR": "TUR",
+}
+
+COUNTRY_COORDS = {
+    "RU": [61, 40], "UA": [49, 31], "BY": [53.5, 28],
+    "PL": [52, 20], "CZ": [49.5, 15.5], "SK": [48.7, 19.5],
+    "BG": [42.7, 25.5], "RS": [44, 21], "HR": [45.1, 15.5],
+    "SI": [46, 15], "GB": [55, -3], "DE": [51, 10],
+    "AT": [47.5, 14.5], "NL": [52, 5], "SE": [62, 15],
+    "NO": [62, 10], "DK": [56, 10], "IS": [65, -19],
+    "FR": [46.5, 2.5], "IT": [42, 12], "ES": [40, -3.5],
+    "PT": [39.5, -8], "RO": [46, 25], "MD": [47, 28.5],
+    "FI": [64, 26], "EE": [59, 26], "HU": [47, 19.5],
+    "LV": [57, 25], "LT": [55, 24], "GR": [39, 22],
+    "AL": [41, 20], "IE": [53, -8], "TR": [39, 35],
 }
 
 
@@ -108,14 +113,20 @@ def create_map(data: list[dict]):
     logging.info("Обогащено %d стран из GeoJSON", enriched)
 
     def style_function(feature):
-        group = feature["properties"].get("group", "other")
-        color = COLOR_MAP.get(group, "gray")
-        return {
-            "fillColor": color,
-            "color": "black",
-            "weight": 0.5,
-            "fillOpacity": 0.6,
-        }
+        group = feature["properties"].get("group", "")
+        if group == "slavic":
+            return {"fillColor": "red", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+        if group == "germanic":
+            return {"fillColor": "blue", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+        if group == "romance":
+            return {"fillColor": "green", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+        if group == "uralic":
+            return {"fillColor": "purple", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+        if group == "baltic":
+            return {"fillColor": "orange", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+        if group == "other":
+            return {"fillColor": "yellow", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+        return {"fillColor": "gray", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
 
     m = folium.Map(location=MAP_CENTER, zoom_start=MAP_ZOOM)
 
@@ -133,6 +144,18 @@ def create_map(data: list[dict]):
             localize=True,
         ),
     ).add_to(m)
+
+    for entry in data:
+        code = entry["code"]
+        coords = COUNTRY_COORDS.get(code)
+        if coords is None:
+            continue
+        folium.Marker(
+            location=coords,
+            icon=folium.DivIcon(
+                html=f"<div style=\"font-size:11px;font-weight:bold;text-shadow:1px 1px 2px white, -1px -1px 2px white;\">{entry['word']}</div>"
+            ),
+        ).add_to(m)
 
     m.save(OUTPUT_PATH)
     logging.info("Карта сохранена: %s", OUTPUT_PATH)
