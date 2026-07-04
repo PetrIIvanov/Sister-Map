@@ -26,7 +26,7 @@ ISO_A2_TO_A3 = {
     "ES": "ESP", "PT": "PRT", "RO": "ROU", "MD": "MDA",
     "FI": "FIN", "EE": "EST", "HU": "HUN", "LV": "LVA",
     "LT": "LTU", "GR": "GRC", "AL": "ALB", "IE": "IRL",
-    "TR": "TUR",
+    "TR": "TUR", "BE": "BEL",
 }
 
 COUNTRY_COORDS = {
@@ -41,6 +41,7 @@ COUNTRY_COORDS = {
     "FI": [64, 26], "EE": [59, 26], "HU": [47, 19.5],
     "LV": [57, 25], "LT": [55, 24], "GR": [39, 22],
     "AL": [41, 20], "IE": [53, -8], "TR": [39, 35],
+    "BE": [50.5, 4.5],
 }
 
 
@@ -128,6 +129,9 @@ def create_map(data: list[dict]):
         if group == "other":
             return {"fillColor": "yellow", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
         return {"fillColor": "gray", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
+    
+    def highlight_function(feature):
+        return {"fillOpacity": 0.8, "color": "transparent", "weight": 0}
 
     m = folium.Map(location=MAP_CENTER, zoom_start=MAP_ZOOM)
     m.get_root().header.add_child(Element("""
@@ -140,6 +144,12 @@ def create_map(data: list[dict]):
         .leaflet-popup-tip {
             display: none !important;
         }
+        .leaflet-interactive:focus {
+            outline: none !important;
+        }
+        .leaflet-path {
+            outline: none !important;
+        }
     </style>
 """))
 
@@ -148,8 +158,8 @@ def create_map(data: list[dict]):
         style_function=style_function,
         highlight_function=style_function,
         tooltip=GeoJsonTooltip(
-            fields=["country_name", "word"],
-            aliases=["Страна", "Слово"],
+            fields=["country_name", "word", "transcription", "group", "info"],
+            aliases=["Страна", "Слово", "Транскрипция", "Группа", ""],
             localize=True,
         ),
         popup=GeoJsonPopup(
