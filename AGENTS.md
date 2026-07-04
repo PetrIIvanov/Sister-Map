@@ -9,6 +9,7 @@
 ```
 SisterMap/
 ├── AGENTS.md         # этот файл
+├── CHANGELOG.md      # лог изменений
 ├── README.md         # описание для людей
 ├── requirements.txt  # зависимости
 ├── .gitignore
@@ -17,6 +18,7 @@ SisterMap/
 │   ├── architecture.md
 │   └── color-scheme.md
 ├── data.json         # исходные данные (33 записи)
+├── logs/             # файлы логов
 ├── map.py            # скрипт генерации карты
 └── sister_map.html   # результат (генерируется)
 ```
@@ -33,3 +35,4 @@ SisterMap/
 
 ## Changelog
 - 2026-07-04 — создана база знаний (AGENTS.md, README.md, docs/*, requirements.txt, .gitignore), инициализирован репозиторий, push на GitHub
+- 2026-07-04 — добавлен CHANGELOG.md, обновлены AGENTS.md/README.md/docs/architecture.md, созданы logs/ и скелет map.py
