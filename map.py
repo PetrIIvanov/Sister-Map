@@ -6,6 +6,7 @@ import urllib.request
 
 import folium
 from folium import GeoJsonTooltip, GeoJsonPopup
+from branca.element import Element
 
 
 # === БЛОК 2: Константы ===
@@ -129,6 +130,16 @@ def create_map(data: list[dict]):
         return {"fillColor": "gray", "color": "black", "weight": 0.5, "fillOpacity": 0.6}
 
     m = folium.Map(location=MAP_CENTER, zoom_start=MAP_ZOOM)
+    m.get_root().header.add_child(Element("""
+        .leaflet-popup-content-wrapper {
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+        .leaflet-popup-tip {
+            display: none !important;
+        }
+    """))
 
     folium.GeoJson(
         geojson,
