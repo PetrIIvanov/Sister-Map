@@ -1,4 +1,6 @@
 # === БЛОК 1: Импорты ===
+import os
+import logging
 
 
 
@@ -12,7 +14,16 @@
 
 # === БЛОК 4: Настройка логгирования ===
 def setup_logging() -> None:
-    pass
+    os.makedirs("logs", exist_ok=True)
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler("logs/sister_map.log", mode="a", encoding="utf-8")
+        ]
+    )
 
 
 # === БЛОК 5: Загрузка данных ===

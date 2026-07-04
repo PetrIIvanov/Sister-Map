@@ -35,7 +35,7 @@ data.json ──► map.py ──┬──► sister_map.html
 
 ### 4. logs/sister_map.log (выход)
 Файл лога с дописыванием (append mode). Уровни: INFO, ERROR.
-Папка `logs/` исключена из git через `.gitignore`, создаётся один раз локально.
+Папка `logs/` создаётся автоматически при запуске, если отсутствует. Исключена из git через `.gitignore`.
 
 ## Зависимости
 - Python 3.8+
