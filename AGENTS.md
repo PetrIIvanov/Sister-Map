@@ -41,3 +41,4 @@ SisterMap/
 - 2026-07-04 — CircleMarker заменён на GeoJson-полигоны (Natural Earth), тултип при наведении, поп-ап по клику, скачивание geojson, countries.geojson добавлен в .gitignore
 - 2026-07-04 — Natural Earth 110m → 50m, матчинг по ADM0_A3, все 33 страны на карте
 - 2026-07-04 — inline style_function (other→жёлтый, пусто→серый), DivIcon-надписи слов на карте
+- 2026-07-04 — исправлен фон DivIcon (display:inline-block), обновлён CHANGELOG
