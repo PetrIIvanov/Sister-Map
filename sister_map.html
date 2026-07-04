@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5eb245e7c0ba740dab062a82a1a6bf5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5eb245e7c0ba740dab062a82a1a6bf5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5eb245e7c0ba740dab062a82a1a6bf5 = L.map(
+                "map_f5eb245e7c0ba740dab062a82a1a6bf5",
+                {
+                    center: [54.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_978cb8a088c316d9fafc91ce198efae3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_978cb8a088c316d9fafc91ce198efae3.addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+            var circle_marker_175744b80f7dbe011458ac608c9a56b9 = L.circleMarker(
+                [61.0, 40.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_f700c51e3835daa9cb2d06cb7896a3f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82aeeb6ae4159852e28143f82ea5ecf2 = $(`<div id="html_82aeeb6ae4159852e28143f82ea5ecf2" style="width: 100.0%; height: 100.0%;"><b>Россия</b><br><i>сестра</i><br>[sʲɪˈstra]<br>группа: slavic<br>Классический славянский корень. Восходит к праиндоевропейскому *swésōr.</div>`)[0];
+                popup_f700c51e3835daa9cb2d06cb7896a3f7.setContent(html_82aeeb6ae4159852e28143f82ea5ecf2);
+            
+        
+
+        circle_marker_175744b80f7dbe011458ac608c9a56b9.bindPopup(popup_f700c51e3835daa9cb2d06cb7896a3f7)
+        ;
+
+        
+    
+    
+            var circle_marker_b0d0cc595197d03ac99a248b356aa742 = L.circleMarker(
+                [49.0, 31.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_9eed89db6ff144c307cbe9cfc8dce531 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ece53385f55538f057363d8d4b738f0 = $(`<div id="html_7ece53385f55538f057363d8d4b738f0" style="width: 100.0%; height: 100.0%;"><b>Украина</b><br><i>сестра</i><br>[sɛˈstrɑ]<br>группа: slavic<br>Славянская группа. Практически идентично русскому и белорусскому звучанию.</div>`)[0];
+                popup_9eed89db6ff144c307cbe9cfc8dce531.setContent(html_7ece53385f55538f057363d8d4b738f0);
+            
+        
+
+        circle_marker_b0d0cc595197d03ac99a248b356aa742.bindPopup(popup_9eed89db6ff144c307cbe9cfc8dce531)
+        ;
+
+        
+    
+    
+            var circle_marker_fc0906504d2d7d2f0a383a76069b2f62 = L.circleMarker(
+                [53.5, 28.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_a954424ecba52696472dd0893102a190 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a467ef649f79184b014667f47e18260d = $(`<div id="html_a467ef649f79184b014667f47e18260d" style="width: 100.0%; height: 100.0%;"><b>Беларусь</b><br><i>сястра</i><br>[sʲaˈstra]<br>группа: slavic<br>Славянская группа, отражает фонетическое «аканье» в письменности.</div>`)[0];
+                popup_a954424ecba52696472dd0893102a190.setContent(html_a467ef649f79184b014667f47e18260d);
+            
+        
+
+        circle_marker_fc0906504d2d7d2f0a383a76069b2f62.bindPopup(popup_a954424ecba52696472dd0893102a190)
+        ;
+
+        
+    
+    
+            var circle_marker_e4fea72800a5ec3e313962e9fc4a4f29 = L.circleMarker(
+                [52.0, 20.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_b65d913b7c343bf0b30a478ec0cb05de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8784f8046e06685047dea657a53cf36c = $(`<div id="html_8784f8046e06685047dea657a53cf36c" style="width: 100.0%; height: 100.0%;"><b>Польша</b><br><i>siostra</i><br>[ˈɕɔstra]<br>группа: slavic<br>Западнославянский язык. Корень тот же, но с характерным шипящим изменением.</div>`)[0];
+                popup_b65d913b7c343bf0b30a478ec0cb05de.setContent(html_8784f8046e06685047dea657a53cf36c);
+            
+        
+
+        circle_marker_e4fea72800a5ec3e313962e9fc4a4f29.bindPopup(popup_b65d913b7c343bf0b30a478ec0cb05de)
+        ;
+
+        
+    
+    
+            var circle_marker_8f21735bdf8c8117bde195e54462af31 = L.circleMarker(
+                [49.5, 15.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_db944c15fdd56347aa27089e8b382f63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32e992fb06354af9a47be22fea1f24b2 = $(`<div id="html_32e992fb06354af9a47be22fea1f24b2" style="width: 100.0%; height: 100.0%;"><b>Чехия</b><br><i>sestra</i><br>[ˈsɛstra]<br>группа: slavic<br>Западнославянский язык, полностью сохранил праславянскую форму.</div>`)[0];
+                popup_db944c15fdd56347aa27089e8b382f63.setContent(html_32e992fb06354af9a47be22fea1f24b2);
+            
+        
+
+        circle_marker_8f21735bdf8c8117bde195e54462af31.bindPopup(popup_db944c15fdd56347aa27089e8b382f63)
+        ;
+
+        
+    
+    
+            var circle_marker_6d437c24f17f877b50a230b029c6a51e = L.circleMarker(
+                [48.7, 19.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_d033a481e8d6d462ae74c9c93311ffd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75f252b0b9392140e2700434311ff619 = $(`<div id="html_75f252b0b9392140e2700434311ff619" style="width: 100.0%; height: 100.0%;"><b>Словакия</b><br><i>sestra</i><br>[ˈsɛstra]<br>группа: slavic<br>Полное совпадение с чешским написанием и произношением.</div>`)[0];
+                popup_d033a481e8d6d462ae74c9c93311ffd1.setContent(html_75f252b0b9392140e2700434311ff619);
+            
+        
+
+        circle_marker_6d437c24f17f877b50a230b029c6a51e.bindPopup(popup_d033a481e8d6d462ae74c9c93311ffd1)
+        ;
+
+        
+    
+    
+            var circle_marker_b31fd6e9c633c1ab04b68dede0077009 = L.circleMarker(
+                [42.7, 25.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_809109882168619bbc96aa48eb42f288 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6c3896ad819f4cca846a10b6818c201 = $(`<div id="html_a6c3896ad819f4cca846a10b6818c201" style="width: 100.0%; height: 100.0%;"><b>Болгария</b><br><i>сестра</i><br>[sɛˈstra]<br>группа: slavic<br>Южнославянский язык. Пишется на кириллице.</div>`)[0];
+                popup_809109882168619bbc96aa48eb42f288.setContent(html_a6c3896ad819f4cca846a10b6818c201);
+            
+        
+
+        circle_marker_b31fd6e9c633c1ab04b68dede0077009.bindPopup(popup_809109882168619bbc96aa48eb42f288)
+        ;
+
+        
+    
+    
+            var circle_marker_ed3af7e5ed08b1c2f6455b392f17c091 = L.circleMarker(
+                [44.0, 21.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_318f2e5f6613aa73dde7fe6daea27d52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b11b456e2627fdf5b2d48c8fbe70993 = $(`<div id="html_2b11b456e2627fdf5b2d48c8fbe70993" style="width: 100.0%; height: 100.0%;"><b>Сербия</b><br><i>сестра / sestra</i><br>[sêstra]<br>группа: slavic<br>Использует две графические системы (кириллицу и латиницу).</div>`)[0];
+                popup_318f2e5f6613aa73dde7fe6daea27d52.setContent(html_2b11b456e2627fdf5b2d48c8fbe70993);
+            
+        
+
+        circle_marker_ed3af7e5ed08b1c2f6455b392f17c091.bindPopup(popup_318f2e5f6613aa73dde7fe6daea27d52)
+        ;
+
+        
+    
+    
+            var circle_marker_92a85b0cdc33b96905016f8109ab471a = L.circleMarker(
+                [45.1, 15.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_3bb8c12cc8e1cb9d88a974d883290b63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81ccff1b280e5b0c5c9a2826598e6506 = $(`<div id="html_81ccff1b280e5b0c5c9a2826598e6506" style="width: 100.0%; height: 100.0%;"><b>Хорватия</b><br><i>sestra</i><br>[sêstra]<br>группа: slavic<br>Южнославянский язык, латинская графика.</div>`)[0];
+                popup_3bb8c12cc8e1cb9d88a974d883290b63.setContent(html_81ccff1b280e5b0c5c9a2826598e6506);
+            
+        
+
+        circle_marker_92a85b0cdc33b96905016f8109ab471a.bindPopup(popup_3bb8c12cc8e1cb9d88a974d883290b63)
+        ;
+
+        
+    
+    
+            var circle_marker_84995bf997c72966cf492c3d29416112 = L.circleMarker(
+                [46.0, 15.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_6e192a06e949264255740825f83bec3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01248e3f55c12a6c4a0c61cd8d0b1a67 = $(`<div id="html_01248e3f55c12a6c4a0c61cd8d0b1a67" style="width: 100.0%; height: 100.0%;"><b>Словения</b><br><i>sestra</i><br>[ˈsèːstra]<br>группа: slavic<br>Южнославянский язык с сохранением архаичных славянских основ.</div>`)[0];
+                popup_6e192a06e949264255740825f83bec3e.setContent(html_01248e3f55c12a6c4a0c61cd8d0b1a67);
+            
+        
+
+        circle_marker_84995bf997c72966cf492c3d29416112.bindPopup(popup_6e192a06e949264255740825f83bec3e)
+        ;
+
+        
+    
+    
+            var circle_marker_f1b3a34b842c1eb06106b1f1042f6193 = L.circleMarker(
+                [55.0, -3.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_2d7c93177e239f11540ca91249377562 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fd711e92669bcea78d399e5e3a61e30 = $(`<div id="html_8fd711e92669bcea78d399e5e3a61e30" style="width: 100.0%; height: 100.0%;"><b>Великобритания</b><br><i>sister</i><br>[ˈsɪstə]<br>группа: germanic<br>Германская группа. Слово пришло в английский под влиянием скандинавских викингов.</div>`)[0];
+                popup_2d7c93177e239f11540ca91249377562.setContent(html_8fd711e92669bcea78d399e5e3a61e30);
+            
+        
+
+        circle_marker_f1b3a34b842c1eb06106b1f1042f6193.bindPopup(popup_2d7c93177e239f11540ca91249377562)
+        ;
+
+        
+    
+    
+            var circle_marker_657f94e8439c938af3d75ddf6cf2ba85 = L.circleMarker(
+                [51.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_68f0d05244ff3cb629323961d96022d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b163bf654c60d35bb32773f1ae906b2b = $(`<div id="html_b163bf654c60d35bb32773f1ae906b2b" style="width: 100.0%; height: 100.0%;"><b>Германия</b><br><i>Schwester</i><br>[ˈʃvɛstɐ]<br>группа: germanic<br>Существительные в немецком всегда пишутся с заглавной буквы.</div>`)[0];
+                popup_68f0d05244ff3cb629323961d96022d1.setContent(html_b163bf654c60d35bb32773f1ae906b2b);
+            
+        
+
+        circle_marker_657f94e8439c938af3d75ddf6cf2ba85.bindPopup(popup_68f0d05244ff3cb629323961d96022d1)
+        ;
+
+        
+    
+    
+            var circle_marker_64597a5ccf39f43f430d5e8396f8bde0 = L.circleMarker(
+                [47.5, 14.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_bd12b3f7d7049ee8accd156748a58e79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77190c3c2def045400271fe0a9694f56 = $(`<div id="html_77190c3c2def045400271fe0a9694f56" style="width: 100.0%; height: 100.0%;"><b>Австрия</b><br><i>Schwester</i><br>[ˈʃvɛstɐ]<br>группа: germanic<br>Немецкоязычная страна, корень совпадает с Германией.</div>`)[0];
+                popup_bd12b3f7d7049ee8accd156748a58e79.setContent(html_77190c3c2def045400271fe0a9694f56);
+            
+        
+
+        circle_marker_64597a5ccf39f43f430d5e8396f8bde0.bindPopup(popup_bd12b3f7d7049ee8accd156748a58e79)
+        ;
+
+        
+    
+    
+            var circle_marker_8c888ca71769f5f85616657a25677d26 = L.circleMarker(
+                [52.0, 5.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_74d4e6d16939a5513c7d1819d72ee4af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8e31d559aaad65f2f13a00bbba21524 = $(`<div id="html_b8e31d559aaad65f2f13a00bbba21524" style="width: 100.0%; height: 100.0%;"><b>Нидерланды</b><br><i>zus / zuster</i><br>[zʏs] / [ˈzʏstər]<br>группа: germanic<br>Разговорное сокращение 'zus' используется гораздо чаще полной формы.</div>`)[0];
+                popup_74d4e6d16939a5513c7d1819d72ee4af.setContent(html_b8e31d559aaad65f2f13a00bbba21524);
+            
+        
+
+        circle_marker_8c888ca71769f5f85616657a25677d26.bindPopup(popup_74d4e6d16939a5513c7d1819d72ee4af)
+        ;
+
+        
+    
+    
+            var circle_marker_dda2e5fd20738e3337e0bc3c9efb0d21 = L.circleMarker(
+                [62.0, 15.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_104a7a731e095b963dcd40bf011f1449 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b8106ab0bfbac7e48bb24a34b8db750 = $(`<div id="html_7b8106ab0bfbac7e48bb24a34b8db750" style="width: 100.0%; height: 100.0%;"><b>Швеция</b><br><i>syster</i><br>[ˈsʏstɛr]<br>группа: germanic<br>Северогерманский (скандинавский) корень.</div>`)[0];
+                popup_104a7a731e095b963dcd40bf011f1449.setContent(html_7b8106ab0bfbac7e48bb24a34b8db750);
+            
+        
+
+        circle_marker_dda2e5fd20738e3337e0bc3c9efb0d21.bindPopup(popup_104a7a731e095b963dcd40bf011f1449)
+        ;
+
+        
+    
+    
+            var circle_marker_9e335345b0bae38b8d330eda92e993ae = L.circleMarker(
+                [62.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_6a6e11427443e25da08d2b4e6eca1866 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0b11415757ef74fcb5cd717d099c488 = $(`<div id="html_a0b11415757ef74fcb5cd717d099c488" style="width: 100.0%; height: 100.0%;"><b>Норвегия</b><br><i>søster</i><br>[ˈsœstər]<br>группа: germanic<br>В Норвегии буква 'ø' заменяет шведскую 'y' в этом корне.</div>`)[0];
+                popup_6a6e11427443e25da08d2b4e6eca1866.setContent(html_a0b11415757ef74fcb5cd717d099c488);
+            
+        
+
+        circle_marker_9e335345b0bae38b8d330eda92e993ae.bindPopup(popup_6a6e11427443e25da08d2b4e6eca1866)
+        ;
+
+        
+    
+    
+            var circle_marker_2ef582ed647e3fd2c63f295f987ff32f = L.circleMarker(
+                [56.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_79e48bf60af08011c614ce7d87ac4e57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb46a005e81ee193bd78569c55f75585 = $(`<div id="html_eb46a005e81ee193bd78569c55f75585" style="width: 100.0%; height: 100.0%;"><b>Дания</b><br><i>søster</i><br>[ˈsøsdɐ]<br>группа: germanic<br>Пишется как в Норвегии, но согласные звучат мягче.</div>`)[0];
+                popup_79e48bf60af08011c614ce7d87ac4e57.setContent(html_eb46a005e81ee193bd78569c55f75585);
+            
+        
+
+        circle_marker_2ef582ed647e3fd2c63f295f987ff32f.bindPopup(popup_79e48bf60af08011c614ce7d87ac4e57)
+        ;
+
+        
+    
+    
+            var circle_marker_fe9e12e4c8fcc26c046bb9f47ae31017 = L.circleMarker(
+                [65.0, -19.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_6d69edcb5d5de944d79b223e1c02acd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad8be82555d76ba856d4e4a4a1986ce5 = $(`<div id="html_ad8be82555d76ba856d4e4a4a1986ce5" style="width: 100.0%; height: 100.0%;"><b>Исландия</b><br><i>systir</i><br>[ˈsɪstɪr]<br>группа: germanic<br>Самый архаичный германский язык, форма не менялась веками.</div>`)[0];
+                popup_6d69edcb5d5de944d79b223e1c02acd5.setContent(html_ad8be82555d76ba856d4e4a4a1986ce5);
+            
+        
+
+        circle_marker_fe9e12e4c8fcc26c046bb9f47ae31017.bindPopup(popup_6d69edcb5d5de944d79b223e1c02acd5)
+        ;
+
+        
+    
+    
+            var circle_marker_4072c297be0f565681e7898c6707981b = L.circleMarker(
+                [46.5, 2.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_549aacb175b7ccc3ffefd0ed59349eb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed8fc81995df4bdd255083241a1cb44c = $(`<div id="html_ed8fc81995df4bdd255083241a1cb44c" style="width: 100.0%; height: 100.0%;"><b>Франция</b><br><i>sœur</i><br>[sœʁ]<br>группа: romance<br>Романская группа. Происходит от латинского 'soror'.</div>`)[0];
+                popup_549aacb175b7ccc3ffefd0ed59349eb7.setContent(html_ed8fc81995df4bdd255083241a1cb44c);
+            
+        
+
+        circle_marker_4072c297be0f565681e7898c6707981b.bindPopup(popup_549aacb175b7ccc3ffefd0ed59349eb7)
+        ;
+
+        
+    
+    
+            var circle_marker_993121deb8d03136cb0189bdb48f4549 = L.circleMarker(
+                [42.0, 12.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_bfc17bf2c637d1bdb5cc4d5e6d9c2b25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d500711532dfc7fd77b931fa5319380b = $(`<div id="html_d500711532dfc7fd77b931fa5319380b" style="width: 100.0%; height: 100.0%;"><b>Италия</b><br><i>sorella</i><br>[soˈrɛlla]<br>группа: romance<br>Уменьшительно-ласкательная форма от латинского 'soror', ставшая основной.</div>`)[0];
+                popup_bfc17bf2c637d1bdb5cc4d5e6d9c2b25.setContent(html_d500711532dfc7fd77b931fa5319380b);
+            
+        
+
+        circle_marker_993121deb8d03136cb0189bdb48f4549.bindPopup(popup_bfc17bf2c637d1bdb5cc4d5e6d9c2b25)
+        ;
+
+        
+    
+    
+            var circle_marker_cc2fa6475fa04589125ad4fdd0677175 = L.circleMarker(
+                [40.0, -3.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_eee37881b28c5a1d94860e96c4a4da5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2b7b70d8d168ed55e97e221d4544fb3 = $(`<div id="html_a2b7b70d8d168ed55e97e221d4544fb3" style="width: 100.0%; height: 100.0%;"><b>Испания</b><br><i>hermana</i><br>[eɾˈmana]<br>группа: romance<br>Уникальный случай: корень латинского 'germanus' (полнокровный, родной). Буква 'h' не читается.</div>`)[0];
+                popup_eee37881b28c5a1d94860e96c4a4da5e.setContent(html_a2b7b70d8d168ed55e97e221d4544fb3);
+            
+        
+
+        circle_marker_cc2fa6475fa04589125ad4fdd0677175.bindPopup(popup_eee37881b28c5a1d94860e96c4a4da5e)
+        ;
+
+        
+    
+    
+            var circle_marker_456bd61740334198dc054778813d35d0 = L.circleMarker(
+                [39.5, -8.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_6e6464c303c7d967d69ae9635c33b475 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb43097b697a1742d913c32df7ad7463 = $(`<div id="html_fb43097b697a1742d913c32df7ad7463" style="width: 100.0%; height: 100.0%;"><b>Португалия</b><br><i>irmã</i><br>[iɾˈmɐ̃]<br>группа: romance<br>Тот же корень, что и в Испании, но сильно усеченный временем.</div>`)[0];
+                popup_6e6464c303c7d967d69ae9635c33b475.setContent(html_fb43097b697a1742d913c32df7ad7463);
+            
+        
+
+        circle_marker_456bd61740334198dc054778813d35d0.bindPopup(popup_6e6464c303c7d967d69ae9635c33b475)
+        ;
+
+        
+    
+    
+            var circle_marker_df26760f6b9702f53b2e23809c241c8a = L.circleMarker(
+                [46.0, 25.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_354c1759ea7d4e0b83861a76b706436f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b006840bfde142e818189d2ae6ef49e = $(`<div id="html_9b006840bfde142e818189d2ae6ef49e" style="width: 100.0%; height: 100.0%;"><b>Румыния</b><br><i>soră</i><br>[ˈsorə]<br>группа: romance<br>Восточнороманский язык, наиболее близкий по написанию к латыни.</div>`)[0];
+                popup_354c1759ea7d4e0b83861a76b706436f.setContent(html_9b006840bfde142e818189d2ae6ef49e);
+            
+        
+
+        circle_marker_df26760f6b9702f53b2e23809c241c8a.bindPopup(popup_354c1759ea7d4e0b83861a76b706436f)
+        ;
+
+        
+    
+    
+            var circle_marker_c0d7d2ad5480c41994f225fc016bdc55 = L.circleMarker(
+                [47.0, 28.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_35934514766cdea3d2521606b3a2fe21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5bb5e53463ebe96d1c3ce188ed0fa52 = $(`<div id="html_b5bb5e53463ebe96d1c3ce188ed0fa52" style="width: 100.0%; height: 100.0%;"><b>Молдова</b><br><i>soră</i><br>[ˈsorə]<br>группа: romance<br>Идентично румынскому языку.</div>`)[0];
+                popup_35934514766cdea3d2521606b3a2fe21.setContent(html_b5bb5e53463ebe96d1c3ce188ed0fa52);
+            
+        
+
+        circle_marker_c0d7d2ad5480c41994f225fc016bdc55.bindPopup(popup_35934514766cdea3d2521606b3a2fe21)
+        ;
+
+        
+    
+    
+            var circle_marker_4b9c05dde6b4e75ba4434b45b378239b = L.circleMarker(
+                [64.0, 26.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_ef9b0cbd661883d08f1d147f0a35b6ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_774122f7942183a25d5c9fa22e1b7ab8 = $(`<div id="html_774122f7942183a25d5c9fa22e1b7ab8" style="width: 100.0%; height: 100.0%;"><b>Финляндия</b><br><i>sisko</i><br>[ˈsisko]<br>группа: uralic<br>Угро-финская группа. Не имеет ничего общего с индоевропейскими корнями.</div>`)[0];
+                popup_ef9b0cbd661883d08f1d147f0a35b6ef.setContent(html_774122f7942183a25d5c9fa22e1b7ab8);
+            
+        
+
+        circle_marker_4b9c05dde6b4e75ba4434b45b378239b.bindPopup(popup_ef9b0cbd661883d08f1d147f0a35b6ef)
+        ;
+
+        
+    
+    
+            var circle_marker_1f104fe00ccff886eadae08c0157b8cc = L.circleMarker(
+                [59.0, 26.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_3dcfb9c341c560626a7696c9e18f20b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52a2eb0b889cc75c828c1b2f6ad0640d = $(`<div id="html_52a2eb0b889cc75c828c1b2f6ad0640d" style="width: 100.0%; height: 100.0%;"><b>Эстония</b><br><i>õde</i><br>[ɤde]<br>группа: uralic<br>Угро-финская группа. Буква 'õ' читается как глубокий звук 'ы'.</div>`)[0];
+                popup_3dcfb9c341c560626a7696c9e18f20b3.setContent(html_52a2eb0b889cc75c828c1b2f6ad0640d);
+            
+        
+
+        circle_marker_1f104fe00ccff886eadae08c0157b8cc.bindPopup(popup_3dcfb9c341c560626a7696c9e18f20b3)
+        ;
+
+        
+    
+    
+            var circle_marker_a304585d19c80a94fdeae65dbcad2f91 = L.circleMarker(
+                [47.0, 19.5],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_5eded8be48b6108c9647846d1338117a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f4f4e2e3fd25d32066527c1568ad4f5 = $(`<div id="html_9f4f4e2e3fd25d32066527c1568ad4f5" style="width: 100.0%; height: 100.0%;"><b>Венгрия</b><br><i>nővér / húg</i><br>[ˈnøːveːr] / [huːɡ]<br>группа: uralic<br>В венгерском нет единого слова: 'nővér' — старшая сестра, 'húg' — младшая.</div>`)[0];
+                popup_5eded8be48b6108c9647846d1338117a.setContent(html_9f4f4e2e3fd25d32066527c1568ad4f5);
+            
+        
+
+        circle_marker_a304585d19c80a94fdeae65dbcad2f91.bindPopup(popup_5eded8be48b6108c9647846d1338117a)
+        ;
+
+        
+    
+    
+            var circle_marker_f3aa68959fcb99bf248b3a098ee7e801 = L.circleMarker(
+                [57.0, 25.0],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_117f6829a8e9e85bf7a52a87195e27cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e4928b7848b9f96583caefc402f5f58 = $(`<div id="html_1e4928b7848b9f96583caefc402f5f58" style="width: 100.0%; height: 100.0%;"><b>Латвия</b><br><i>māsa</i><br>[ˈmaːsa]<br>группа: baltic<br>Балтийская языковая группа, отдельная ветвь индоевропейской семьи.</div>`)[0];
+                popup_117f6829a8e9e85bf7a52a87195e27cb.setContent(html_1e4928b7848b9f96583caefc402f5f58);
+            
+        
+
+        circle_marker_f3aa68959fcb99bf248b3a098ee7e801.bindPopup(popup_117f6829a8e9e85bf7a52a87195e27cb)
+        ;
+
+        
+    
+    
+            var circle_marker_7557097be5a45b7e62fe3eb042103b5a = L.circleMarker(
+                [55.0, 24.0],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_3854305bbbf4b5a7933097c909c7610f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba1e7508f3b3e5c12cce6fbdd09301c9 = $(`<div id="html_ba1e7508f3b3e5c12cce6fbdd09301c9" style="width: 100.0%; height: 100.0%;"><b>Литва</b><br><i>sesuo</i><br>[sɛˈsuɔ]<br>группа: baltic<br>Балтийская группа. Очень архаичная индоевропейская форма, близкая к санскриту.</div>`)[0];
+                popup_3854305bbbf4b5a7933097c909c7610f.setContent(html_ba1e7508f3b3e5c12cce6fbdd09301c9);
+            
+        
+
+        circle_marker_7557097be5a45b7e62fe3eb042103b5a.bindPopup(popup_3854305bbbf4b5a7933097c909c7610f)
+        ;
+
+        
+    
+    
+            var circle_marker_5a2af9a6db00230f8a068610f5be697a = L.circleMarker(
+                [39.0, 22.0],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_31fd85fd15f2d4dd20790f061a98e63a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bb1d28533973dffd14a1e62eaed3e5b = $(`<div id="html_1bb1d28533973dffd14a1e62eaed3e5b" style="width: 100.0%; height: 100.0%;"><b>Греция</b><br><i>αδελφή</i><br>[aðelˈfi]<br>группа: other<br>Греческий язык — изолят. Буквально переводится как 'из того же лона (матки)'.</div>`)[0];
+                popup_31fd85fd15f2d4dd20790f061a98e63a.setContent(html_1bb1d28533973dffd14a1e62eaed3e5b);
+            
+        
+
+        circle_marker_5a2af9a6db00230f8a068610f5be697a.bindPopup(popup_31fd85fd15f2d4dd20790f061a98e63a)
+        ;
+
+        
+    
+    
+            var circle_marker_3001e1d869af06a9f817d4fe1726aa9a = L.circleMarker(
+                [41.0, 20.0],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_e9a6ca3b2bd6cbea930b827a55e751d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b92f88b021764a8f5060fbb5d30cdbec = $(`<div id="html_b92f88b021764a8f5060fbb5d30cdbec" style="width: 100.0%; height: 100.0%;"><b>Албания</b><br><i>motër</i><br>[ˈmɔtəɾ]<br>группа: other<br>Албанский язык — изолят. Ложный друг переводчика: звучит как 'mother', но означает 'сестра'.</div>`)[0];
+                popup_e9a6ca3b2bd6cbea930b827a55e751d1.setContent(html_b92f88b021764a8f5060fbb5d30cdbec);
+            
+        
+
+        circle_marker_3001e1d869af06a9f817d4fe1726aa9a.bindPopup(popup_e9a6ca3b2bd6cbea930b827a55e751d1)
+        ;
+
+        
+    
+    
+            var circle_marker_307bf462e6f9cfefc2ca801985e2c611 = L.circleMarker(
+                [53.0, -8.0],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_09f1f3f02aa58127472117dfd8bafb3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25f9933cd6078eb896185f2edeb2476f = $(`<div id="html_25f9933cd6078eb896185f2edeb2476f" style="width: 100.0%; height: 100.0%;"><b>Ирландия</b><br><i>deirfiúr</i><br>[ˈdʲɛɾʲəfʲuːɾ]<br>группа: other<br>Кельтская группа (ирландский гэльский язык). Используется наряду с английским.</div>`)[0];
+                popup_09f1f3f02aa58127472117dfd8bafb3b.setContent(html_25f9933cd6078eb896185f2edeb2476f);
+            
+        
+
+        circle_marker_307bf462e6f9cfefc2ca801985e2c611.bindPopup(popup_09f1f3f02aa58127472117dfd8bafb3b)
+        ;
+
+        
+    
+    
+            var circle_marker_7e607aba217f31493f7289e35c1ccbf9 = L.circleMarker(
+                [39.0, 35.0],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_f5eb245e7c0ba740dab062a82a1a6bf5);
+        
+    
+        var popup_86dbda019138a31df541b0c4ca1e4cbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41e6c9032efa97f4537560d3d5b84eaf = $(`<div id="html_41e6c9032efa97f4537560d3d5b84eaf" style="width: 100.0%; height: 100.0%;"><b>Турция</b><br><i>kız kardeş</i><br>[kɯz kaɾˈdeʃ]<br>группа: other<br>Тюркская группа. Дословно переводится как 'девочка-единоутробник'.</div>`)[0];
+                popup_86dbda019138a31df541b0c4ca1e4cbb.setContent(html_41e6c9032efa97f4537560d3d5b84eaf);
+            
+        
+
+        circle_marker_7e607aba217f31493f7289e35c1ccbf9.bindPopup(popup_86dbda019138a31df541b0c4ca1e4cbb)
+        ;
+
+        
+    
+</script>
+</html>

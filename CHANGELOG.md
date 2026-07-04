@@ -20,3 +20,9 @@
 - Описание функций map.py и logs/ в docs/architecture.md
 ### Changed
 - logs/ добавлена в .gitignore, .gitkeep удалён (папка создаётся скриптом runtime при отсутствии)
+
+## [1.0.0] - 2026-07-04
+### Added
+- Реализованы все блоки map.py: константы, координаты 33 стран, load_data, create_map
+- Сгенерирована sister_map.html (Folium, CircleMarker, popup)
+- setup_logging: stdout + FileHandler, уровень INFO, папка logs/ создаётся автоматически

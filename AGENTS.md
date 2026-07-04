@@ -37,3 +37,4 @@ SisterMap/
 - 2026-07-04 — создана база знаний (AGENTS.md, README.md, docs/*, requirements.txt, .gitignore), инициализирован репозиторий, push на GitHub
 - 2026-07-04 — добавлен CHANGELOG.md, обновлены AGENTS.md/README.md/docs/architecture.md, созданы logs/ и скелет map.py
 - 2026-07-04 — logs/ добавлена в .gitignore, .gitkeep удалён (папка создаётся скриптом runtime при отсутствии)
+- 2026-07-04 — реализован map.py (7 блоков), сгенерирована sister_map.html, push
