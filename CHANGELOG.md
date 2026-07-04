@@ -18,3 +18,5 @@
 - map.py — скелет скрипта (блоки-комментарии, main-заглушка)
 - Раздел «Логгирование» в README.md
 - Описание функций map.py и logs/ в docs/architecture.md
+### Changed
+- logs/ добавлена в .gitignore, .gitkeep удалён (папка создаётся скриптом runtime)

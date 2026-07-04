@@ -35,6 +35,7 @@ data.json ──► map.py ──┬──► sister_map.html
 
 ### 4. logs/sister_map.log (выход)
 Файл лога с дописыванием (append). Уровни: INFO, ERROR.
+Папка `logs/` создаётся `setup_logging()` при каждом запуске, в git не хранится.
 
 ## Зависимости
 - Python 3.8+
