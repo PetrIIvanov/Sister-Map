@@ -20,6 +20,9 @@ build/
 # Logs
 logs/
 
+# GeoJSON
+countries.geojson
+
 # OS
 .DS_Store
 Thumbs.db

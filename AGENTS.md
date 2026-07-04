@@ -38,3 +38,4 @@ SisterMap/
 - 2026-07-04 — добавлен CHANGELOG.md, обновлены AGENTS.md/README.md/docs/architecture.md, созданы logs/ и скелет map.py
 - 2026-07-04 — logs/ добавлена в .gitignore, .gitkeep удалён (папка создаётся скриптом runtime при отсутствии)
 - 2026-07-04 — реализован map.py (7 блоков), сгенерирована sister_map.html, push
+- 2026-07-04 — CircleMarker заменён на GeoJson-полигоны (Natural Earth), тултип при наведении, поп-ап по клику, скачивание geojson, countries.geojson добавлен в .gitignore
