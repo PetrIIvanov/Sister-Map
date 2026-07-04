@@ -133,6 +133,7 @@ def create_map(data: list[dict]):
     folium.GeoJson(
         geojson,
         style_function=style_function,
+        highlight_function=style_function,
         tooltip=GeoJsonTooltip(
             fields=["country_name", "word"],
             aliases=["Страна", "Слово"],

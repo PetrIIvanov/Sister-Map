@@ -43,3 +43,4 @@ SisterMap/
 - 2026-07-04 — inline style_function (other→жёлтый, пусто→серый), DivIcon-надписи слов на карте
 - 2026-07-04 — исправлен фон DivIcon (display:inline-block), обновлён CHANGELOG
 - 2026-07-04 — убран className DivIcon (чёрная рамка при клике)
+- 2026-07-04 — добавлен highlight_function=style_function (убрана подсветка полигона при клике)

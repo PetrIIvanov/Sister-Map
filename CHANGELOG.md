@@ -65,3 +65,7 @@
 ## [1.3.2] - 2026-07-04
 ### Fixed
 - Чёрная рамка DivIcon при клике (className убран, background:transparent)
+
+## [1.3.3] - 2026-07-04
+### Fixed
+- Чёрная обводка полигона при клике (добавлен highlight_function=style_function)
