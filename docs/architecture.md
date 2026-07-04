@@ -34,8 +34,8 @@ data.json ──► map.py ──┬──► sister_map.html
 Автономный HTML-файл на Leaflet (JS). Открывается в браузере без сервера.
 
 ### 4. logs/sister_map.log (выход)
-Файл лога с дописыванием (append). Уровни: INFO, ERROR.
-Папка `logs/` создаётся `setup_logging()` при каждом запуске, в git не хранится.
+Файл лога с дописыванием (append mode). Уровни: INFO, ERROR.
+Папка `logs/` исключена из git через `.gitignore`, создаётся один раз локально.
 
 ## Зависимости
 - Python 3.8+
