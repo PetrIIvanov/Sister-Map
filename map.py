@@ -20,7 +20,7 @@ COLOR_MAP = {
 
 DATA_PATH = "data.json"
 OUTPUT_PATH = "sister_map.html"
-GEOJSON_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson"
+GEOJSON_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"
 GEOJSON_PATH = "countries.geojson"
 MAP_CENTER = [54, 15]
 MAP_ZOOM = 4
@@ -86,21 +86,24 @@ def create_map(data: list[dict]):
 
     enriched = 0
     for feature in geojson["features"]:
-        iso_a3 = feature["properties"].get("ISO_A3")
+        props = feature["properties"]
+        iso_a3 = props.get("ISO_A3")
+        if iso_a3 in (None, "", "-99", "-099"):
+            iso_a3 = props.get("ADM0_A3")
         entry = data_by_a3.get(iso_a3)
         if entry:
-            feature["properties"]["word"] = entry["word"]
-            feature["properties"]["country_name"] = entry["country_name"]
-            feature["properties"]["transcription"] = entry["transcription"]
-            feature["properties"]["group"] = entry["group"]
-            feature["properties"]["info"] = entry["info"]
+            props["word"] = entry["word"]
+            props["country_name"] = entry["country_name"]
+            props["transcription"] = entry["transcription"]
+            props["group"] = entry["group"]
+            props["info"] = entry["info"]
             enriched += 1
         else:
-            feature["properties"]["word"] = ""
-            feature["properties"]["country_name"] = ""
-            feature["properties"]["transcription"] = ""
-            feature["properties"]["group"] = ""
-            feature["properties"]["info"] = ""
+            props["word"] = ""
+            props["country_name"] = ""
+            props["transcription"] = ""
+            props["group"] = ""
+            props["info"] = ""
 
     logging.info("Обогащено %d стран из GeoJSON", enriched)
 

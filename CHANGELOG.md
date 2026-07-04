@@ -40,3 +40,9 @@
 ### Removed
 - COUNTRY_COORDS — больше не нужны (координаты в GeoJSON)
 - CircleMarker — заменён на GeoJson
+
+## [1.2.0] - 2026-07-04
+### Changed
+- Natural Earth 110m → 50m (все 33 страны теперь обогащаются)
+- Матчинг стран: fallback на ADM0_A3, если ISO_A3 = "-99"
+- sister_map.html ~3.5 MB (50m геометрия)
