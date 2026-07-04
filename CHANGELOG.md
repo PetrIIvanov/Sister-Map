@@ -61,3 +61,7 @@
 - Фон DivIcon-надписи растягивается на всё слово (display:inline-block)
 ### Added
 - CHANGELOG.md: секция для патч-версий
+
+## [1.3.2] - 2026-07-04
+### Fixed
+- Чёрная рамка DivIcon при клике (className убран, background:transparent)
