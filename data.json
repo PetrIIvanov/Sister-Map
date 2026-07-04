@@ -1,0 +1,299 @@
+[
+  {
+    "code": "RU",
+    "country_name": "Россия",
+    "word": "сестра",
+    "transcription": "[sʲɪˈstra]",
+    "ru_reading": "сестра",
+    "group": "slavic",
+    "info": "Классический славянский корень. Восходит к праиндоевропейскому *swésōr."
+  },
+  {
+    "code": "UA",
+    "country_name": "Украина",
+    "word": "сестра",
+    "transcription": "[sɛˈstrɑ]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Славянская группа. Практически идентично русскому и белорусскому звучанию."
+  },
+  {
+    "code": "BY",
+    "country_name": "Беларусь",
+    "word": "сястра",
+    "transcription": "[sʲaˈstra]",
+    "ru_reading": "сястра",
+    "group": "slavic",
+    "info": "Славянская группа, отражает фонетическое «аканье» в письменности."
+  },
+  {
+    "code": "PL",
+    "country_name": "Польша",
+    "word": "siostra",
+    "transcription": "[ˈɕɔstra]",
+    "ru_reading": "щёстра",
+    "group": "slavic",
+    "info": "Западнославянский язык. Корень тот же, но с характерным шипящим изменением."
+  },
+  {
+    "code": "CZ",
+    "country_name": "Чехия",
+    "word": "sestra",
+    "transcription": "[ˈsɛstra]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Западнославянский язык, полностью сохранил праславянскую форму."
+  },
+  {
+    "code": "SK",
+    "country_name": "Словакия",
+    "word": "sestra",
+    "transcription": "[ˈsɛstra]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Полное совпадение с чешским написанием и произношением."
+  },
+  {
+    "code": "BG",
+    "country_name": "Болгария",
+    "word": "сестра",
+    "transcription": "[sɛˈstra]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Южнославянский язык. Пишется на кириллице."
+  },
+  {
+    "code": "RS",
+    "country_name": "Сербия",
+    "word": "сестра / sestra",
+    "transcription": "[sêstra]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Использует две графические системы (кириллицу и латиницу)."
+  },
+  {
+    "code": "HR",
+    "country_name": "Хорватия",
+    "word": "sestra",
+    "transcription": "[sêstra]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Южнославянский язык, латинская графика."
+  },
+  {
+    "code": "SI",
+    "country_name": "Словения",
+    "word": "sestra",
+    "transcription": "[ˈsèːstra]",
+    "ru_reading": "сэстра",
+    "group": "slavic",
+    "info": "Южнославянский язык с сохранением архаичных славянских основ."
+  },
+  {
+    "code": "GB",
+    "country_name": "Великобритания",
+    "word": "sister",
+    "transcription": "[ˈsɪstə]",
+    "ru_reading": "систэ",
+    "group": "germanic",
+    "info": "Германская группа. Слово пришло в английский под влиянием скандинавских викингов."
+  },
+  {
+    "code": "DE",
+    "country_name": "Германия",
+    "word": "Schwester",
+    "transcription": "[ˈʃvɛstɐ]",
+    "ru_reading": "швестэр",
+    "group": "germanic",
+    "info": "Существительные в немецком всегда пишутся с заглавной буквы."
+  },
+  {
+    "code": "AT",
+    "country_name": "Австрия",
+    "word": "Schwester",
+    "transcription": "[ˈʃvɛstɐ]",
+    "ru_reading": "швестэр",
+    "group": "germanic",
+    "info": "Немецкоязычная страна, корень совпадает с Германией."
+  },
+  {
+    "code": "NL",
+    "country_name": "Нидерланды",
+    "word": "zus / zuster",
+    "transcription": "[zʏs] / [ˈzʏstər]",
+    "ru_reading": "зюс / зюстэр",
+    "group": "germanic",
+    "info": "Разговорное сокращение 'zus' используется гораздо чаще полной формы."
+  },
+  {
+    "code": "SE",
+    "country_name": "Швеция",
+    "word": "syster",
+    "transcription": "[ˈsʏstɛr]",
+    "ru_reading": "сюстэр",
+    "group": "germanic",
+    "info": "Северогерманский (скандинавский) корень."
+  },
+  {
+    "code": "NO",
+    "country_name": "Норвегия",
+    "word": "søster",
+    "transcription": "[ˈsœstər]",
+    "ru_reading": "сёстэр",
+    "group": "germanic",
+    "info": "В Норвегии буква 'ø' заменяет шведскую 'y' в этом корне."
+  },
+  {
+    "code": "DK",
+    "country_name": "Дания",
+    "word": "søster",
+    "transcription": "[ˈsøsdɐ]",
+    "ru_reading": "сёсдэ",
+    "group": "germanic",
+    "info": "Пишется как в Норвегии, но согласные звучат мягче."
+  },
+  {
+    "code": "IS",
+    "country_name": "Исландия",
+    "word": "systir",
+    "transcription": "[ˈsɪstɪr]",
+    "ru_reading": "систир",
+    "group": "germanic",
+    "info": "Самый архаичный германский язык, форма не менялась веками."
+  },
+  {
+    "code": "FR",
+    "country_name": "Франция",
+    "word": "sœur",
+    "transcription": "[sœʁ]",
+    "ru_reading": "сёр",
+    "group": "romance",
+    "info": "Романская группа. Происходит от латинского 'soror'."
+  },
+  {
+    "code": "IT",
+    "country_name": "Италия",
+    "word": "sorella",
+    "transcription": "[soˈrɛlla]",
+    "ru_reading": "сорэлла",
+    "group": "romance",
+    "info": "Уменьшительно-ласкательная форма от латинского 'soror', ставшая основной."
+  },
+  {
+    "code": "ES",
+    "country_name": "Испания",
+    "word": "hermana",
+    "transcription": "[eɾˈmana]",
+    "ru_reading": "эрмана",
+    "group": "romance",
+    "info": "Уникальный случай: корень латинского 'germanus' (полнокровный, родной). Буква 'h' не читается."
+  },
+  {
+    "code": "PT",
+    "country_name": "Португалия",
+    "word": "irmã",
+    "transcription": "[iɾˈmɐ̃]",
+    "ru_reading": "ирман (в нос)",
+    "group": "romance",
+    "info": "Тот же корень, что и в Испании, но сильно усеченный временем."
+  },
+  {
+    "code": "RO",
+    "country_name": "Румыния",
+    "word": "soră",
+    "transcription": "[ˈsorə]",
+    "ru_reading": "сорэ",
+    "group": "romance",
+    "info": "Восточнороманский язык, наиболее близкий по написанию к латыни."
+  },
+  {
+    "code": "MD",
+    "country_name": "Молдова",
+    "word": "soră",
+    "transcription": "[ˈsorə]",
+    "ru_reading": "сорэ",
+    "group": "romance",
+    "info": "Идентично румынскому языку."
+  },
+  {
+    "code": "FI",
+    "country_name": "Финляндия",
+    "word": "sisko",
+    "transcription": "[ˈsisko]",
+    "ru_reading": "сиско",
+    "group": "uralic",
+    "info": "Угро-финская группа. Не имеет ничего общего с индоевропейскими корнями."
+  },
+  {
+    "code": "EE",
+    "country_name": "Эстония",
+    "word": "õde",
+    "transcription": "[ɤde]",
+    "ru_reading": "ыдэ",
+    "group": "uralic",
+    "info": "Угро-финская группа. Буква 'õ' читается как глубокий звук 'ы'."
+  },
+  {
+    "code": "HU",
+    "country_name": "Венгрия",
+    "word": "nővér / húg",
+    "transcription": "[ˈnøːveːr] / [huːɡ]",
+    "ru_reading": "нёвер / хууг",
+    "group": "uralic",
+    "info": "В венгерском нет единого слова: 'nővér' — старшая сестра, 'húg' — младшая."
+  },
+  {
+    "code": "LV",
+    "country_name": "Латвия",
+    "word": "māsa",
+    "transcription": "[ˈmaːsa]",
+    "ru_reading": "мааса",
+    "group": "baltic",
+    "info": "Балтийская языковая группа, отдельная ветвь индоевропейской семьи."
+  },
+  {
+    "code": "LT",
+    "country_name": "Литва",
+    "word": "sesuo",
+    "transcription": "[sɛˈsuɔ]",
+    "ru_reading": "сэсуо",
+    "group": "baltic",
+    "info": "Балтийская группа. Очень архаичная индоевропейская форма, близкая к санскриту."
+  },
+  {
+    "code": "GR",
+    "country_name": "Греция",
+    "word": "αδελφή",
+    "transcription": "[aðelˈfi]",
+    "ru_reading": "адэльфи",
+    "group": "other",
+    "info": "Греческий язык — изолят. Буквально переводится как 'из того же лона (матки)'."
+  },
+  {
+    "code": "AL",
+    "country_name": "Албания",
+    "word": "motër",
+    "transcription": "[ˈmɔtəɾ]",
+    "ru_reading": "мотэр",
+    "group": "other",
+    "info": "Албанский язык — изолят. Ложный друг переводчика: звучит как 'mother', но означает 'сестра'."
+  },
+  {
+    "code": "IE",
+    "country_name": "Ирландия",
+    "word": "deirfiúr",
+    "transcription": "[ˈdʲɛɾʲəfʲuːɾ]",
+    "ru_reading": "дэрфюр",
+    "group": "other",
+    "info": "Кельтская группа (ирландский гэльский язык). Используется наряду с английским."
+  },
+  {
+    "code": "TR",
+    "country_name": "Турция",
+    "word": "kız kardeş",
+    "transcription": "[kɯz kaɾˈdeʃ]",
+    "ru_reading": "кыз кардаш",
+    "group": "other",
+    "info": "Тюркская группа. Дословно переводится как 'девочка-единоутробник'."
+  }
+]
