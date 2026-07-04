@@ -131,6 +131,7 @@ def create_map(data: list[dict]):
 
     m = folium.Map(location=MAP_CENTER, zoom_start=MAP_ZOOM)
     m.get_root().header.add_child(Element("""
+    <style>
         .leaflet-popup-content-wrapper {
             border-radius: 0 !important;
             box-shadow: none !important;
@@ -139,7 +140,8 @@ def create_map(data: list[dict]):
         .leaflet-popup-tip {
             display: none !important;
         }
-    """))
+    </style>
+"""))
 
     folium.GeoJson(
         geojson,
