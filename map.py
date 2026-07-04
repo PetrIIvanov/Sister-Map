@@ -153,7 +153,7 @@ def create_map(data: list[dict]):
         folium.Marker(
             location=coords,
             icon=folium.DivIcon(
-                html=f"<div style=\"font-size:11px;font-weight:bold;text-shadow:1px 1px 2px white, -1px -1px 2px white;\">{entry['word']}</div>"
+                html=f"<div style=\"font-size:11px;font-weight:bold;background:rgba(255,255,255,0.7);padding:1px 3px;border-radius:2px;\">{entry['word']}</div>"
             ),
         ).add_to(m)
 
